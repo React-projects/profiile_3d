@@ -35,6 +35,7 @@ const WhatIDo = () => {
                </div>
             </h2>
          </div>
+
          <div className='what-box'>
             <div className='what-box-in'>
                <div className='what-border2'>
@@ -43,6 +44,8 @@ const WhatIDo = () => {
                      <line x1='100%' y1='0' x2='100%' y2='100%' stroke='white' strokeWidth='2' strokeDasharray='7,7' />
                   </svg>
                </div>
+
+               {/* --- DEVELOP BOX --- */}
                <div className='what-content what-noTouch' ref={(el) => setRef(el, 0)}>
                   <div className='what-border1'>
                      <svg height='100%'>
@@ -55,33 +58,27 @@ const WhatIDo = () => {
                   <div className='what-content-in'>
                      <h3>DEVELOP</h3>
                      <h4>Description</h4>
-                     <p>Building high-performance, scalable web applications with clean component architecture, reactive state management, and modern frontend frameworks.</p>
+                     <p>
+                        I build fast, scalable, and responsive web applications. My focus is on writing clean, maintainable code and turning complex designs into simple, user-friendly interfaces that
+                        solve real problems.
+                     </p>
                      <h5>Skillset & tools</h5>
                      <div className='what-content-flex'>
-                        <div className='what-tags'>Vue.js</div>
-                        <div className='what-tags'>Nuxt.js</div>
+                        <div className='what-tags'>Vue.js / React.js</div>
+                        <div className='what-tags'>Nuxt.js / Next.js</div>
                         <div className='what-tags'>TypeScript</div>
                         <div className='what-tags'>JavaScript</div>
-                        <div className='what-tags'>Pinia / Vuex</div>
-                        <div className='what-tags'>Tailwind CSS</div>
-                        <div className='what-tags'>Bootstrap</div>
-                        <div className='what-tags'>HTML5 & CSS3</div>
-                        <div className='what-tags'>REST APIs</div>
-                        <div className='what-tags'>Git & GitHub</div>
-                        <div className='what-tags'>Vue.js</div>
-                        <div className='what-tags'>Nuxt.js</div>
-                        <div className='what-tags'>TypeScript</div>
-                        <div className='what-tags'>JavaScript</div>
-                        <div className='what-tags'>Pinia / Vuex</div>
                         <div className='what-tags'>Tailwind CSS</div>
                         <div className='what-tags'>Bootstrap</div>
                         <div className='what-tags'>HTML5 & CSS3</div>
                         <div className='what-tags'>REST APIs</div>
                         <div className='what-tags'>Git & GitHub</div>
                      </div>
-                     <div className='what-arrow'></div>
+                     <div className='what-arrow'>{/* Your arrow icon */}</div>
                   </div>
                </div>
+
+               {/* --- UI/UX BOX --- */}
                <div className='what-content what-noTouch' ref={(el) => setRef(el, 1)}>
                   <div className='what-border1'>
                      <svg height='100%'>
@@ -92,19 +89,29 @@ const WhatIDo = () => {
                   <div className='what-content-in'>
                      <h3>UI/UX & OPTIMIZE</h3>
                      <h4>Description</h4>
-                     <p>Optimizing user experiences for higher engagement and conversions, multilingual architectures (i18n), performance tuning, and custom WordPress solutions.</p>
+                     <p>
+                        I design and optimize digital experiences that drive engagement and conversions. My focus is on creating intuitive, accessible interfaces, improving performance, and solving
+                        user problems to help businesses reach their goals.
+                     </p>
                      <h5>Skillset & tools</h5>
                      <div className='what-content-flex'>
+                        {/* Core UX Skills */}
                         <div className='what-tags'>UI/UX Optimization</div>
-                        <div className='what-tags'>WordPress</div>
-                        <div className='what-tags'>Sass / SCSS</div>
                         <div className='what-tags'>Responsive Design</div>
-                        <div className='what-tags'>nuxt-i18n</div>
-                        <div className='what-tags'>FullCalendar</div>
-                        <div className='what-tags'>SEO & Speed</div>
+                        <div className='what-tags'>Accessibility (a11y)</div>
                         <div className='what-tags'>Problem Solving</div>
+
+                        {/* Technical/Development Skills */}
+                        {/* <div className='what-tags'>WordPress</div>
+                        <div className='what-tags'>Sass / SCSS</div>
+                        <div className='what-tags'>Nuxt-i18n</div>
+                        <div className='what-tags'>FullCalendar</div> */}
+
+                        {/* Performance Skills */}
+                        <div className='what-tags'>SEO & Speed</div>
+                        <div className='what-tags'>Performance Tuning</div>
                      </div>
-                     <div className='what-arrow'></div>
+                     <div className='what-arrow'>{/* Your arrow icon */}</div>
                   </div>
                </div>
             </div>

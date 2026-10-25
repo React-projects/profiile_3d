@@ -34,10 +34,11 @@
 }
 .what-box-in {
   flex-direction: column;
-  height: 500px;
+  height: 550px;
   margin-left: 200px;
   position: relative;
   display: none;
+  transition: height 0.5s;
 }
 .what-content {
   width: 450px;
@@ -249,7 +250,7 @@
     margin-right: 20%;
   }
   .what-box-in {
-    height: 400px;
+    height: 550px;
   }
   .what-content h3 {
     font-size: 28px;
@@ -290,7 +291,7 @@
     padding-bottom: 50px;
   }
   .what-box-in {
-    height: 500px;
+    height: 550px;
     margin-left: -50px;
   }
   .what-content {
@@ -326,7 +327,7 @@
     justify-content: left;
   }
   .what-box:last-child {
-    height: 500px;
+    height: 550px;
   }
   .what-box {
     width: 500px;
@@ -338,7 +339,7 @@
   }
   .what-box-in {
     margin-left: 0px;
-    height: 450px;
+    height: 550px;
   }
   .what-content h5,
   .what-content-flex {
@@ -390,4 +391,8 @@
     font-size: 7rem;
     line-height: 6.8rem;
   }
+}
+.what-box-in:has(.what-noTouch:hover),
+.what-box-in:has(.what-content-active) {
+  height: 650px;
 }
